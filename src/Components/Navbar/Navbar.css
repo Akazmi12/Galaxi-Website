@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-bar {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.nav-logo img {
+    width: 220px;
+    height: 65px;
+    margin-left: 60px;
+}
+
+.menu-box {
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-menu li {
+    float: left;
+    color: #1b144e;
+    padding: 10px 26px;
+    font-size: 16px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.active {
+    font-weight: bold;
+}
+
+
+.menu-bar {
+    display: none;
+}
+
+.getApp {
+    border: 1px solid #1b144e;
+    padding: 5px 26px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.menu-symbol{
+    display:none;
+}
+
+.social-button{
+    display:none;
+}
+.social-links{
+    display:none;
+}
+@media screen and (max-width: 1200px) {
+    .home{
+        position:static;
+        display:block;
+        height:70px;
+    }
+
+    .social-button{
+        display:block;
+        border:none !important;
+    }
+
+    .social-links{
+        display: flex;
+        justify-content: space-between;
+        border:none !important;
+
+    }
+    .social-links img{
+        border-top:2px dotted #8CC640;
+        padding:10px;
+    }
+    .nav-logo-click{
+        position: relative;
+        width:140px;
+        margin:auto;
+    }
+    .nav-bar {
+        z-index: 1;
+        background-color: white;
+        width:100%;
+        position:fixed;
+        display: block;
+        height: 70px;
+    }
+    .menu-symbol{
+        padding-top:62px !important;
+        font-size:36px !important;
+        color:#8CC640 !important;
+        text-align: center !important;
+        border:none !important;
+        display:block;
+        font-family:Montserrat;
+        font-weight:bold;
+    }
+    .active{
+        font-weight: lighter;
+    }
+
+    .nav-menu li {
+        width:80%;
+        margin:auto;
+        text-align: left;
+        float: none;
+        background-color: white;
+        border-bottom: 1px solid grey;
+    }
+
+    .nav-menu {
+        display:block;
+        width: 100%;
+        background-color:white;
+        height:100svh;
+        margin-top:-10px;
+        /* border:1px solid red; */
+    }
+
+    .responsive {
+        display: none;
+    }
+
+    .getApp {
+        margin: 0;
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid grey;
+    }
+
+    .mob-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: 0px auto;
+        /* border:1px solid red; */
+    }
+
+    .nav-logo img {
+        margin-left: 0px;
+        width: 150px;
+        /* border:1px solid red; */
+    }
+
+    .menu-bar {
+        display: block;
+        cursor: pointer;
+    }
+    .hide{
+        display:none;
+    }
+
+
+}

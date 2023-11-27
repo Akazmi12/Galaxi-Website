@@ -1,0 +1,159 @@
+.Homepage2{
+    background-color: #F9FAFF;
+    height:630px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid red; */
+    position: relative;
+}
+.green-eclipse{
+    /* border:1px solid red; */
+    position: absolute;
+    right:0;
+    top:-180px;
+    height:406px;
+}
+.page-text{
+    text-align: center;
+}
+
+.page-text h1{
+    font-weight:700;
+    font-size: 32px;
+    color:#1D1752;
+}
+
+.page-text p{
+    font-size: 16px;
+    font-weight: 400;
+    color:black;
+}
+
+.cards{
+    display:flex;
+    justify-content: space-between;
+    margin-top:80px;
+    gap:88px;
+    /* border:1px solid red; */
+    
+}
+.cards-tab{
+    display: flex;
+    gap:88px;
+}
+.card-1{
+    border-radius: 10px;
+    height:350px;
+    width:280px;
+    box-shadow: 0px 1px 10px 1px #00000026;
+    border: 1px solid #1D1752
+}
+
+.card-last{
+    border-radius: 10px;
+    height:350px;
+    width:280px;
+    box-shadow: 0px 1px 10px 1px #00000026;
+    border: 1px solid #1D1752
+
+}
+.super-script-01{
+    margin-top:-70px;
+    margin-left: 180px;
+    font-size: 96px;
+    font-weight: 400;
+    position: absolute;
+
+}
+.super-script{
+    margin-top:-70px;
+    margin-left: 160px;
+    font-size: 96px;
+    font-weight: 400;
+    position: absolute;
+}
+
+
+
+.card-align h1{
+    font-size: 20px;
+    margin-left:26px;
+    margin-bottom: 10px;
+}
+
+.line-1{
+    width:70px;
+    margin-left:26px;
+    margin-bottom: 10px;    
+}
+.line-2{
+    width:126px;
+    margin-left:26px;
+    margin-bottom: 10px;   
+}
+
+.line-3{
+    width:84px;
+    margin-left:26px;
+    margin-bottom: 10px;   
+}
+.card-align p{
+    font-size: 16px;
+    margin-left:26px;
+}
+
+.card-align img{
+    margin-left:78px;
+    margin-top:54px;
+    height:123px;
+}
+
+@media screen and (max-width:1200px){
+    .Homepage2{
+        height:fit-content;
+        padding:40px 0px;
+    }
+    .cards{
+        display:block;
+    }
+    .cards-tab{
+        display:flex;
+        justify-content: space-between;
+    }
+    .card-last{
+        margin-top:10%;
+        display:block;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .Homepage2{
+        display:block;
+        height:fit-content;
+        padding:40px 0px;
+    }
+    .page-text h1{
+        font-size:24px;
+    }
+    .page-text p{
+        font-size:14px;
+        width:90%;
+        margin:auto;
+    }
+    .cards{
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card-last{
+        margin:0;
+    }
+    .cards-tab{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+}
