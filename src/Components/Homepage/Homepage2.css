@@ -177,7 +177,7 @@
     }
     .green-container{
         /* border:1px solid red; */
-        margin-top:-400px;
+        margin-top:-300px;
     }
     .green-eclipse{
         scale:60%;
@@ -237,8 +237,7 @@
         border: 1px solid #1D1752
     }
     .green-container{
-        /* border:1px solid red; */
-        display:none;
+        margin-top: -300px;
     }
 
     
