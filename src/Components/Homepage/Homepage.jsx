@@ -9,6 +9,7 @@ import imgBanner from '../Assets/mobile-banner.svg'
 export const Homepage = () => {
   return (
     <div className='home-page'>
+      <div className='yellow-box'></div>
       <div className='home-container'>
         <div className='mobile-banner'>
           <img src={imgBanner} alt='banner' />

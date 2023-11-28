@@ -21,14 +21,10 @@ export const Navbar = () => {
   const whyGalaxi = useRef(null);
   const feat = useRef(null);
   const contactUs = useRef(null);
+  const getAppBtn = useRef(null);
 
   const scrollToSec = (elementRef) => {
     console.log(elementRef);
-    // (isActive ? setName('nav-menu responsive') : setName('nav-menu'));
-    // (isActive ? setBr('') : setBr('hide'));
-    // (isActive ? setCross('hide') : setCross(''));
-    // (isActive ? setLogo('nav-logo') : setLogo('nav-logo nav-logo-click'));
-    // setIsActive(current => !current);
     menuIcon();
     window.scrollTo({
       top: elementRef.current.offsetTop,
@@ -80,7 +76,7 @@ export const Navbar = () => {
               <li onClick={() => scrollToSec(whyGalaxi)}>Why Galaxi?</li>
               <li onClick={() => scrollToSec(feat)}>Features</li>
               <li onClick={() => scrollToSec(contactUs)}>Contact Us</li>
-              <li className='getApp'>Get App</li>
+              <li onClick={() => scrollToSec(getAppBtn)} className='getApp'>Get App</li>
               <li className='social-button'>Social Apps</li>
               <li className='social-links'>
                 <img src={fbImg} alt='link' />
@@ -98,7 +94,7 @@ export const Navbar = () => {
       <Homepage3 refer={whyGalaxi} fet={feat}/>  
       <Homepage4 />
       <Homepage5 refer={contactUs}/>
-      <Homepage6 />
+      <Homepage6 refer={getAppBtn}/>
     </>
   )
 }

@@ -2,16 +2,15 @@ import React from 'react'
 import './Homepage6.css'
 import leftImg from '../Assets/google.svg'
 import rightImg from '../Assets/apple.svg'
-import blueLeft from '../Assets/blue-left.svg'
 import fLogo from '../Assets/logo.svg'
 import tagRight from '../Assets/tags.svg'
 import copyImg from '../Assets/copyright.svg'
 
-export const Homepage6 = () => {
+export const Homepage6 = (props) => {
     return (
-        <div className='homepage6'>
-            <img className='blue-left' src={blueLeft} alt='eclipse' />
-            {/* <img className='blue-right' src={blueRight} alt='eclipse' /> */}
+        <div ref={props.refer} className='homepage6'>
+            <div className='blue-left'></div>
+            {/* <div className='blue-right'></div> */}
             <div className='text'>
                 <div className='display-box'>
                     <div className='container-box'>
@@ -25,7 +24,9 @@ export const Homepage6 = () => {
                     </div>
                 </div>
 
-                <div className='footer-box'>
+                <div className='blue-right'></div>
+            </div>
+            <div className='footer-box'>
                 <div className='footer'>
                     <div className='test'>
                         <div className='display-flex'>
@@ -46,7 +47,6 @@ export const Homepage6 = () => {
                     <div className='footer-right'>
                         <img src={tagRight} alt='' />
                     </div>
-                </div>
                 </div>
             </div>
         </div>

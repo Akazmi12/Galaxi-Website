@@ -2,8 +2,6 @@ import React from 'react'
 import './Homepage3.css'
 import mobile from '../Assets/mobile.svg'
 import playBtn from '../Assets/playbutton.svg'
-import blueEclipse from '../Assets/blue.svg'
-import greenEclipse from '../Assets/green-r.svg'
 import playTri from '../Assets/whiteTri.svg'
 import slide_image_1 from '../Assets/10T1.svg'
 import slide_image_2 from '../Assets/10T1-1.svg'
@@ -53,9 +51,9 @@ export const Homepage3 = (props) => {
                 </div>
                 <div className='box-background'>
                     <div className='big-box-2'>
-                        <img className='top-left-blue' src={blueEclipse} alt='' />
-                        <img className='top-right-blue' src={blueEclipse} alt='' />
                         <div className='explainer-container'>
+                            <div className='top-left-blue'></div>
+                            <div className='top-right-blue'></div>
                             <h1>Explainer Video</h1>
                             <div className='video-section'>
                                 <img className='blueCircles' src={playBtn} alt='playBtn' />
@@ -67,9 +65,9 @@ export const Homepage3 = (props) => {
                 </div>
 
             </div>
-            <div className='feature-section'>
-                <img className='bottom-left-green' src={greenEclipse} alt='' />
-                <div ref={props.fet}className='feature-text'>
+            <div ref={props.fet} className='feature-section'>
+                <div className='bottom-left-green'></div>
+                <div className='feature-text'>
                     <h1>Features</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua.</p>

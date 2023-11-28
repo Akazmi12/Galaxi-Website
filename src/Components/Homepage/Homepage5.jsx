@@ -19,7 +19,9 @@ porttitor, leo quam vulputate nibh, sit amet blandit erat magna.</p>
                 <div className='text_area'>
                 <input type='textarea' placeholder='Write Comment'></input>
                 </div>
+                <div className='button-submit'>
                 <button type='submit'>Send Message</button>
+                </div>
             </form>
 
         </div>

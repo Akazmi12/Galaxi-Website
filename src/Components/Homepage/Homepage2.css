@@ -4,15 +4,31 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    /* border:1px solid red; */
     position: relative;
 }
-.green-eclipse{
+
+.green-container{
+    margin-top:-600px;
     /* border:1px solid red; */
     position: absolute;
-    right:0;
-    top:-180px;
-    height:406px;
+    width:100%;
+    overflow: hidden;
+    height:100vh;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.green-eclipse{
+    /* border:1px solid red; */
+    width:200px;
+    height:200px;
+    flex-shrink: 0;
+    background: #8CC640;
+    opacity: 0.9;
+    filter:blur(80px);
+    transform: translateX(110px);
 }
 .page-text{
     text-align: center;
@@ -56,9 +72,9 @@
     width:280px;
     box-shadow: 0px 1px 10px 1px #00000026;
     border: 1px solid #1D1752
-
 }
 .super-script-01{
+    color: #1D1752;
     margin-top:-70px;
     margin-left: 180px;
     font-size: 96px;
@@ -67,6 +83,7 @@
 
 }
 .super-script{
+    color: #1D1752;
     margin-top:-70px;
     margin-left: 160px;
     font-size: 96px;
@@ -115,19 +132,21 @@
         padding:40px 0px;
     }
     .cards{
-        display:block;
+        width:70%;
+        margin:60px auto;
+        flex-wrap:wrap;
     }
     .cards-tab{
         display:flex;
         justify-content: space-between;
     }
-    .card-last{
-        margin-top:10%;
-        display:block;
+    .green-container{
+        /* border:1px solid red; */
+        margin-top:-1000px;
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .Homepage2{
         display:block;
         height:fit-content;
@@ -154,6 +173,65 @@
         align-items: center;
         flex-direction: column;
     }
+    .green-container{
+        /* border:1px solid red; */
+        margin-top:-300px;
+    }
+    
 
+}
 
+@media screen and (max-width:350px) {
+    .card-1{
+        border-radius: 10px;
+        height:250px;
+        width:90%;
+        box-shadow: 0px 1px 10px 1px #00000026;
+        border: 1px solid #1D1752
+    }
+    .card-last{
+        border-radius: 10px;
+        height:250px;
+        width:90%;
+        box-shadow: 0px 1px 10px 1px #00000026;
+        border: 1px solid #1D1752
+    }
+
+    .super-script{
+        font-size:70px;
+        margin-top:-60px;
+        margin-left: 110px;
+        
+        
+    }
+    .super-script-01{
+        font-size:70px;
+        margin-top:-60px;
+        margin-left: 130px;
+    }
+    .card-align img{
+        margin-top:10px;
+        margin-left:0px;
+        width:200px;
+    }
+    .card-align h1{
+        font-size:10px;
+    }
+    .card-align p{
+        font-size:8px;
+    }
+    
+    .card-last{
+        border-radius: 10px;
+        height:250px;
+        width:90%;
+        box-shadow: 0px 1px 10px 1px #00000026;
+        border: 1px solid #1D1752
+    }
+    .green-container{
+        /* border:1px solid red; */
+        display:none;
+    }
+
+    
 }
